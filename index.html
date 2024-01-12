@@ -3,7 +3,206 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   </head>
-  <body></body>
+  <body>
+    <div id="sidebar">
+      <h1>CMS</h1>
+      <ul>
+        <li><img src="./img/0.png" alt="Home Icon" /> Dashboard</li>
+        <li><img src="./img/1.png" alt="Home Icon" /> Package Builder</li>
+        <li><img src="./img/1.png" alt="Profile Icon" /> Destination</li>
+        <li><img src="./img/1.png" alt="Profile Icon" /> Home Banner</li>
+        <li><img src="./img/2.png" alt="Profile Icon" /> Mission & Vision</li>
+        <li><img src="./img/3.png" alt="Profile Icon" /> About Us</li>
+        <li><img src="./img/4.png" alt="Profile Icon" /> Our Team</li>
+        <li><img src="./img/5.png" alt="Profile Icon" /> Our Partners</li>
+        <li><img src="./img/5.png" alt="Profile Icon" /> Image Gallery</li>
+        <li><img src="./img/5.png" alt="Profile Icon" /> Video Gallery</li>
+        <li><img src="./img/6.png" alt="Profile Icon" /> Awards & Recog.</li>
+        <li>
+          <img src="./img/7.png" alt="Profile Icon" /> Clients Testimonials
+        </li>
+        <li><img src="./img/7.png" alt="Profile Icon" /> Career Information</li>
+        <li><img src="./img/7.png" alt="Profile Icon" /> News/Articles</li>
+      </ul>
+    </div>
+    <div class="basic">
+      <h1>Basic details</h1>
+    </div>
+    <div id="content-container">
+      <div class="content-section">
+        <div class="input-container">
+          <div>
+            <label for="input1">Fix Departure Code</label>
+            <input type="text" id="input1" />
+          </div>
+          <div>
+            <label for="input1">Fix Departure Name</label>
+            <input type="text" id="input2" />
+          </div>
+        </div>
+
+        <div class="add-button">
+          <input type="text" />
+          <button>Add +</button>
+        </div>
+
+        <div id="destination-container">
+          <button id="add-destination">+ Add Destination</button>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Sr. No</th>
+                <th>Destination</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>
+                  <select>
+                    <option value="destination1">Destination 1</option>
+                    <option value="destination2">Destination 2</option>
+                    <option value="destination3">Destination 3</option>
+                  </select>
+                </td>
+                <td class="delete-icon">&#10006;</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>
+                  <select>
+                    <option value="destination1">Destination 1</option>
+                    <option value="destination2">Destination 2</option>
+                    <option value="destination3">Destination 3</option>
+                  </select>
+                </td>
+                <td class="delete-icon">&#10006;</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>
+                  <select>
+                    <option value="destination1">Destination 1</option>
+                    <option value="destination2">Destination 2</option>
+                    <option value="destination3">Destination 3</option>
+                  </select>
+                </td>
+                <td class="delete-icon">&#10006;</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>
+                  <select>
+                    <option value="destination1">Destination 1</option>
+                    <option value="destination2">Destination 2</option>
+                    <option value="destination3">Destination 3</option>
+                  </select>
+                </td>
+                <td class="delete-icon">&#10006;</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="input-container">
+          <div>
+            <label for="input1">Issue Date</label>
+            <input type="text" id="input1" class="datepicker" />
+          </div>
+          <div>
+            <label for="input2">Expiry Date</label>
+            <input type="text" id="input2" class="datepicker" />
+          </div>
+        </div>
+      </div>
+
+      <div class="content-section">
+        <div id="tag-container">
+          <label for="tags">Package Name</label>
+          <input type="text" id="tag-input" placeholder="Tour Type" />
+          <ul id="tag-list"></ul>
+        </div>
+      </div>
+
+      <div class="content-section">
+        <h2>Website Setting</h2>
+        <form action="#" method="post" enctype="multipart/form-data">
+          <!-- Label for the first file input -->
+          <label for="fileInputTop">Top File Input:</label>
+
+          <!-- Input box for the top file input -->
+          <input type="text" id="fileInputTop" name="topFile" />
+
+          <!-- Labels and input boxes for the next four file inputs -->
+          <label for="fileInput1">F.D. Banner Image</label>
+          <input type="file" id="fileInput1" name="file1" />
+
+          <label for="fileInput2">Icon</label>
+          <input type="file" id="fileInput2" name="file2" />
+
+          <label for="fileInput3">Package Hot Deals Inner Image</label>
+          <input type="file" id="fileInput3" name="file3" />
+
+          <label for="fileInput4">Add Hot Deal Image</label>
+          <input type="file" id="fileInput4" name="file4" />
+
+          <div class="checkbox-container">
+            <div>
+              <label class="checkbox-label" for="statusCheckbox">Status</label>
+              <input
+                type="checkbox"
+                id="statusCheckbox"
+                class="checkbox"
+                checked
+              />
+            </div>
+
+            <div>
+              <label class="checkbox-label" for="showOnHomeCheckbox"
+                >Show on Home</label
+              >
+              <input type="checkbox" id="showOnHomeCheckbox" class="checkbox" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const tagInput = document.getElementById("tag-input");
+        const tagList = document.getElementById("tag-list");
+
+        tagInput.addEventListener("keypress", function (event) {
+          if (event.key === "Enter") {
+            const tagValue = tagInput.value.trim();
+
+            if (tagValue !== "") {
+              const tagItem = document.createElement("li");
+              tagItem.classList.add("tag");
+              tagItem.textContent = tagValue;
+
+              tagList.appendChild(tagItem);
+              tagInput.value = "";
+            }
+          }
+        });
+      });
+    </script>
+
+    <script>
+      $(function () {
+        $(".datepicker").datepicker();
+      });
+    </script>
+  </body>
 </html>

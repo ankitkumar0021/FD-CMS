@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fix Departure Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      header {
+        background-color: #d9d7d7;
+        color: #fff;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #000;
+      }
+
+      .search-container {
+        display: flex;
+        align-items: center;
+      }
+
+      .search-input {
+        padding: 8px;
+        margin-right: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      .search-button,
+      .add-button {
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .add-button {
+        background-color: #007bff;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #4caf50;
+        color: #fff;
+      }
+
+      .activate-button,
+      .cancel-button {
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        padding: 5px 8px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .cancel-button {
+        background-color: #ff3333;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Fix Departure</div>
+
+      <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search..." />
+        <button class="search-button">Search</button>
+        <button class="add-button">Add Fix Departure</button>
+      </div>
+    </header>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Icon Image</th>
+          <th>Fix Departure Code</th>
+          <th>Fix Departure Name</th>
+          <th>Destination</th>
+          <th>Fix Departure Series</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Example data for 10 rows -->
+        <tr>
+          <td><img src="./img/icon.png" alt="Icon 1" /></td>
+          <td>FDC001</td>
+          <td>Spring Break</td>
+          <td>Beach Resort</td>
+          <td>Series A</td>
+          <td><button class="activate-button">Activate</button></td>
+        </tr>
+        <tr>
+          <td><img src="./img/icon.png" alt="Icon 1" /></td>
+          <td>FDC002</td>
+          <td>Summer Adventure</td>
+          <td>Mountain Retreat</td>
+          <td>Series B</td>
+          <td><button class="cancel-button">Cancel</button></td>
+        </tr>
+        <tr>
+          <td><img src="./img/icon.png" alt="Icon 1" /></td>
+          <td>FDC003</td>
+          <td>Fall Escape</td>
+          <td>City Tour</td>
+          <td>Series C</td>
+          <td><button class="activate-button">Activate</button></td>
+        </tr>
+        <tr>
+          <td><img src="./img/icon.png" alt="Icon 1" /></td>
+          <td>FDC004</td>
+          <td>Winter Wonderland</td>
+          <td>Ski Resort</td>
+          <td>Series D</td>
+          <td><button class="cancel-button">Cancel</button></td>
+        </tr>
+        <tr>
+          <td><img src="./img/icon.png" alt="Icon 1" /></td>
+          <td>FDC005</td>
+          <td>Year-End Celebration</td>
+          <td>Luxury Cruise</td>
+          <td>Series E</td>
+          <td><button class="activate-button">Activate</button></td>
+        </tr>
+        <tr>
+          <td><img src="./img/icon.png" alt="Icon 1" /></td>
+          <td>FDC006</td>
+          <td>Spring Retreat</td>
+          <td>Mountain Lodge</td>
+          <td>Series F</td>
+          <td><button class="cancel-button">Cancel</button></td>
+        </tr>
+        <tr>
+          <td><img src="./img/icon.png" alt="Icon 1" /></td>
+          <td>FDC007</td>
+          <td>Summer Cruise</td>
+          <td>Island Paradise</td>
+          <td>Series G</td>
+          <td><button class="activate-button">Activate</button></td>
+        </tr>
+        <tr>
+          <td><img src="./img/icon.png" alt="Icon 1" /></td>
+          <td>FDC008</td>
+          <td>Fall Foliage</td>
+          <td>Scenic Drive</td>
+          <td>Series H</td>
+          <td><button class="cancel-button">Cancel</button></td>
+        </tr>
+        <tr>
+          <td><img src="./img/icon.png" alt="Icon 1" /></td>
+          <td>FDC009</td>
+          <td>Winter Escape</td>
+          <td>Snowy Cabin</td>
+          <td>Series I</td>
+          <td><button class="activate-button">Activate</button></td>
+        </tr>
+        <tr>
+          <td><img src="./img/icon.png" alt="Icon 1" /></td>
+          <td>FDC010</td>
+          <td>New Year's Celebration</td>
+          <td>City Lights Tour</td>
+          <td>Series J</td>
+          <td><button class="cancel-button">Cancel</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
